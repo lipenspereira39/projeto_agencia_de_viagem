@@ -1,0 +1,364 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #80808029;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.largura_limite {
+    max-width: 1024px;
+}
+.topo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.topo_logo {
+    width: 32px;
+    height: 32px;
+}
+.topo_titulo {
+    font-size: 30px;
+    color: #5d15d1;
+    margin: 0 0 0 10px;
+}
+
+/* Secção Fundo + Formulario*/
+
+.img_fundo {
+    width: 100%;
+    height: auto;
+    background-image: url("assets/imagens/bahia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.area_fundo {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5d15d1;
+}
+
+.fundo_logo {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+.fundo_descricao {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 0 5px;
+}
+
+.area_formulario {
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+    
+}
+
+.subtitulo_formulario {
+    font-size: 22px;
+    margin: 0 0 24px 0px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario label {
+    font-size: 16px;
+}
+
+.formulario input, .formulario select {
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+}
+
+.formulario input {
+    padding: 0 5px;
+    box-sizing: border-box;
+    
+}
+
+.formulario select {
+    padding: 0 3px;
+}
+
+.formulario_campo_duplo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario_campo_duplo div {
+    width: calc(50% - 10px);
+}
+
+.radio {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.radio div {
+    display: flex;
+    align-items: center;
+    width: 120px;
+}
+
+.radio input {
+    width: 15px;
+}
+
+.radio label {
+    margin: 0 0 0 8px;
+}
+
+.formulario button {
+    width: 160px;
+    height: 32px;
+    border: none;
+    background: #5d15d1;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0 0 0;
+    cursor: pointer;
+}
+
+/* Secção cidades e imagens*/
+
+.area_ofertas, .area_turistica {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 32px auto auto auto;
+}
+
+.ofertas_titulo, .area_turistica_titulo {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.ofertas_descricao, .area_turistica_descricao {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+
+.area_turistica_descricao span {
+    font-weight: bold;
+}
+
+.ofertas_img {
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.img_cidades {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img_cidades figure {
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 15px);
+    margin: 0 6px;
+}
+
+.img_destaque img, .img_cidades img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.img_destaque figcaption, .img_cidades figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    background: rgb(0 0 0 / 50%);
+    font-size: 17px;
+    color: #fff;
+
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.img_turistica {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paisagem {
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.paisagem img {
+    object-fit: cover;
+    width: 341px;
+    height: 256px;
+    
+}
+
+.paisagem div {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.paisagem h3 {
+    font-size: 18px;
+}
+
+.paisagem p {
+    color: grey;
+    font-size: 14px;
+    margin: 15px 0 0 0px;
+}
+
+/*  Rodape  */
+
+footer {
+    width: 100%;
+    background: #5d15d1;
+    margin: 32px 0 0 0;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.conteudo_rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.conteudo_rodape h2 {
+    color: #fff;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+}
+
+.conteudo_rodape div {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.conteudo_rodape img {
+    width: 18px;
+}
+
+.conteudo_rodape span {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+}
+
+/* Design Responsivo */
+
+@media(max-width: 1100px) {
+    .largura_limite {
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px) {
+   .formulario button {
+        width: 100%;
+    }
+
+    .ofertas_img {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .img_cidades {
+        width: 100%;
+    }
+
+    .img_destaque, .img_cidades figure {
+        width: 100%;
+        height: 225px;
+        margin: 15px 0 0 0;
+    }
+
+    .img_turistica {
+        flex-direction: column;
+    }
+
+    .paisagem {
+        width: 100%;
+        margin: 15px 0 0 0;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo_rodape {
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px) {
+    .formulario_campo_duplo, .radio {
+        flex-direction: column;
+    }
+
+    .formulario_campo_duplo div, .radio div {
+        width: 100%;
+    }
+}
